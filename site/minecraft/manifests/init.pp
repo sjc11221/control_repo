@@ -22,7 +22,7 @@ class minecraft (
       ensure => file,
     #  source => 'puppet:///modules/minecraft/minecraft.service',
       contect => epp('minecraft/minecraft.service',{
-        install_dir => ${install_dir},
+        install_dir => $install_dir,
       
       })
     }
